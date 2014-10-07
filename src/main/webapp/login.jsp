@@ -16,7 +16,7 @@
 
 <title>ARKO支付宝服务窗开发平台</title>
 
-<script type="text/javascript" async="" src="./arko_services_files/login.js"></script></head>
+<script type="text/javascript" async="" src="js/login.js"></script></head>
 
 <body>
 
@@ -59,7 +59,7 @@
 					<div id="mws-login-remember" class="mws-form-row mws-inset">
                         <ul class="mws-form-list inline" style="text-align:center;">
                             <li>
-                                <label for="remember"><a href="http://keede.arkodata.com/arko/account/forgetpassword.do" class="forget-link"> ? 忘记密码</a></label>
+                                <label for="remember"><a href="forgetpassword.jsp" class="forget-link"> ? 忘记密码</a></label>
                             </li>
                         </ul>
                     </div>

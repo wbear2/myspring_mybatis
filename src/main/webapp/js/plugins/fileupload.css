@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+.fileinput-status{
+	width: 307px;
+	height: 44px;
+	float: left;
+	position: relative;
+	line-height: 16px;
+	margin: 0 4px 4px 0;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.fileupload-ico{
+	width: 32px;
+	height: 32px;
+	background-position: -32px -64px;
+	margin: 7px 0 0 4px;
+	background-image: url(fileico_v4.png);
+	background-repeat: no-repeat;
+	font-weight: normal;
+	text-align: center;
+	line-height: normal;
+	overflow: hidden;
+	font-family: nui!important;
+	font-size: 12px;
+	line-height: normal!important;
+	display: inline-block;
+	vertical-align: middle;
+}
+.fileupload-title{
+	width: 200px;
+	height: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	position: absolute;
+	left: 41px;
+	top: 5px;
+}
+.fileupload-delete{
+	position: absolute;
+	right: 6px;
+	top: 5px;
+	display: block;
+}
+.fileupload-del-txt{
+	outline: 0;
+	cursor: pointer;
+	padding: 2px 4px 4px;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #039;
+	line-height: 16px;
+}
+.fileupload-stu{
+	height: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #b0b0b0;
+	position: absolute;
+	left: 41px;
+	top: 21px;
+	overflow: visible;
+	display: block;
+}
+.fileinput-stu-suc{
+	color: #3d882d!important;
+}
+.fileupload-upload{
+	height: 26px;
+	line-height: 26px;
+	padding: 0 11px;
+	position: absolute;
+	left: 0;
+	top: 45px;
+	background-color: #000;
+	color: #FFF;
+	filter: alpha(opacity=80);
+	opacity: .8;
+	white-space: nowrap;
+	z-index: 10;
+	border-radius: 3px;
+}
+.fileupload-progress {
+    height: 20px;
+    overflow: hidden;
+    float: left;
+}
+.fileupload-progress-bar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABABAB;
+    float: left;
+    font-size: 0;
+    height: 8px;
+    line-height: 0;
+    margin: 5px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+}
+.fileupload-progress-bar-inner {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAGCAMAAAACAMs3AAAAA3NCSVQICAjb4U/gAAAASFBMVEWE12WE12SF12WE1mSC0mGB0mGB0mCB0WB5zFp5zFt4zFp4y1p0xlVzxlV0xlZzxVVxv1Fxv1Bwv1BwvlBquk5puU1puk3////H7KbBAAAAGHRSTlP//////////////////////////////wDNEy7qAAAACXBIWXMAAArwAAAK8AFCrDSYAAAAFnRFWHRDcmVhdGlvbiBUaW1lADA1LzE1LzEysU5BKAAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNAay06AAAACtSURBVCiRXYzbEoMgDEQjBUoVEGvx/z+1mWyTiT0PmWUvUAgPIYRAROEOHKTehL8si68F/coKjx8U41NIKUUh58w3KVELf6k56GTBPrG5TKmUl1BK2baNhd0iUVF8Z11Xe6JpEbZcgCMJ9V5r3fe9tcaXde/dP5kmVAdHXYao2RN0wW1pjLcyBNPHcZzniSeLoUDD9FtcmLi6oM+N67pMzDmhp2Da17zphY/m/AK+bxo7Cuh9lgAAAABJRU5ErkJggg==") repeat-x scroll 0 0 #79CC5A;
+    height: 6px;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+}
+.fileupload-progress-text {
+    margin-left: 8px;
+    float: left;
+}
