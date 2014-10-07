@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.arkodata</groupId>
-	<artifactId>arko_services</artifactId>
+	<artifactId>arko-services</artifactId>
 	<version>0.1.0</version>
 	<packaging>war</packaging>
 
