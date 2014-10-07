@@ -18,7 +18,10 @@
 		<security:intercept-url pattern="/index.jsp*" access="ROLE_ADMIN,ROLE_USER" />
 		<security:intercept-url pattern="/hello.do*" access="ROLE_ADMIN,ROLE_USER" />
 		
-		<!-- <security:session-management invalid-session-url="/sessionTimeout.html" /> -->
+		<!-- session management default 30min and single sign-on -->
+		<security:session-management>
+			<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>
+		</security:session-management>
 		
 	</security:http>
 
