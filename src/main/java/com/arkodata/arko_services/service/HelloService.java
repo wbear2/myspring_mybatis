@@ -1,4 +1,4 @@
-package com.arkodata.arko_services.services;
+package com.arkodata.arko_services.service;
 
 import org.springframework.security.access.annotation.Secured;
 
