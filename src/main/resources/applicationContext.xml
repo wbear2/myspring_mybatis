@@ -65,8 +65,7 @@
 	<bean id="userDataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="${driver}"></property>
-		<property name="url"
-			value="${url}"></property>
+		<property name="url" value="${url}"></property>
 		<property name="username" value="${username}"></property>
 		<property name="password" value="${password}"></property>
 	</bean>
@@ -75,9 +74,15 @@
 		<property name="dataSource" ref="userDataSource" />
 	</bean>
 
-	<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="com.arkodata.arko_services.mapper.UserMapper" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	<!-- It works not well when there are too many mappers -->
+	<!-- <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean"> 
+		<property name="mapperInterface" value="com.arkodata.arko_services.mapper.UserMapper" 
+		/> <property name="sqlSessionFactory" ref="sqlSessionFactory" /> </bean> -->
+
+	<!-- scan mapper annotations automatically -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.arkodata.arko_services.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 
 </beans>
